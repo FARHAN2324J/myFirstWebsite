@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link rel="stylesheet" href="./wib.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav>
+            <div class="left">
+                <div class="light">GUCCI</div>
+            </div>
+            <div class="right">
+                <a><i class='fas fa-home'></i></a>
+                <a><i class='fas fa-shopping-cart'></i></a>
+            </div>
+        </nav>
+        <section class="slider">
+            <div class="buttons">
+                <ul class="dots">
+                    <li class="activeSet" onclick="setSlide('slide1', 1)"></li>
+                    <li onclick="setSlide('slide2', 2)"></li>
+                    <li onclick="setSlide('slide3', 3)"></li>
+                </ul>    
+            </div>
+            <div class="slides">
+                <div class="item active" id="slide1">
+                    <img src="./1.jpg" alt="">
+                </div>
+                <div class="item" id="slide2">
+                    <img src="./10.jpg" alt="">
+                </div>
+                <div class="item" id="slide3">
+                    <img src="./4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div class="button">
+                <button class="box">shoes</button>
+                <button class="box">hats</button>
+                <button class="box">clothes</button>
+                <button class="box">kot</button>
+                <button class="box">mantua</button>
+                <button class="box">backpack</button>
+            </div>
+        </section>
+        <section>
+            <div class="gallery">
+                <article class="card" id="shoes" style="--isNew:true">
+                    <div class="author"><div class="name">Shoes</div></div>
+                    <div class="image"><img src="./sss.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Nike-01</div>
+                        <div class="price">300$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card" id="shoes" style="--isPopular:true">
+                    <div class="author"><div class="name">Clothes</div></div>
+                    <div class="image"><img src="./vecteezy_unisex-crewneck-sweatshirt-soft-stabilized-fabric-suitable_26756030.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Winter</div>
+                        <div class="price">150$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>              
+                        </div>
+                    </div>
+                </article>
+                <article class="card" id="shoes" style="--isNew:true">
+                    <div class="author"><div class="name">Shoes</div></div>
+                    <div class="image"><img src="./—Pngtree—sneakers running shoes color_9145069.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Sneakers</div>
+                        <div class="price">40$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card" id="clothes" style="--isPopular:true">
+                    <div class="author"><div class="name">Clothes</div></div>
+                    <div class="image"><img src="./vecteezy_ai-generated-black-blank-hoodie-mockup-isolated-on_34926617.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Hoodie</div>
+                        <div class="price">250$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>  
+                        </div>            
+                    </div>
+                </article>
+                <article class="card" id="shoes" style="--isOff:true">
+                    <div class="author"><div class="name">Shoes</div></div>
+                    <div class="image"><img src="./saa.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Nike-02</div>
+                        <div class="price" id="priceOff">50$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>                            
+                        </div>                        
+                    </div>   
+                </article>
+                <article class="card" id="clothes" style="--isNew:true">
+                    <div class="author"><div class="name">Clothes</div></div>
+                    <div class="image"><img src="./sa (1).png" alt=""></div>
+                    <div class="info">
+                        <div class="name">T-Shirt</div>
+                        <div class="price">100$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>                          
+                        </div>                  
+                    </div>               
+                </article>
+                <article class="card" id="shoes" style="--isNew:true">
+                    <div class="author"><div class="name">Shoes</div></div>
+                    <div class="image"><img src="./sss.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Nike-01</div>
+                        <div class="price">300$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card" id="shoes" style="--isPopular:true">
+                    <div class="author"><div class="name">Clothes</div></div>
+                    <div class="image"><img src="./vecteezy_unisex-crewneck-sweatshirt-soft-stabilized-fabric-suitable_26756030.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Winter</div>
+                        <div class="price">150$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>              
+                        </div>
+                    </div>
+                </article>
+                <article class="card" id="shoes" style="--isNew:true">
+                    <div class="author"><div class="name">Shoes</div></div>
+                    <div class="image"><img src="./—Pngtree—sneakers running shoes color_9145069.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Sneakers</div>
+                        <div class="price">40$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card" id="clothes" style="--isPopular:true">
+                    <div class="author"><div class="name">Clothes</div></div>
+                    <div class="image"><img src="./vecteezy_ai-generated-black-blank-hoodie-mockup-isolated-on_34926617.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Hoodie</div>
+                        <div class="price">250$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>  
+                        </div>            
+                    </div>
+                </article>
+                <article class="card" id="shoes" style="--isOff:true">
+                    <div class="author"><div class="name">Shoes</div></div>
+                    <div class="image"><img src="./saa.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Nike-02</div>
+                        <div class="price" id="priceOff">50$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>                            
+                        </div>                        
+                    </div>   
+                </article>
+                <article class="card" id="clothes" style="--isNew:true">
+                    <div class="author"><div class="name">Clothes</div></div>
+                    <div class="image"><img src="./sa (1).png" alt=""></div>
+                    <div class="info">
+                        <div class="name">T-Shirt</div>
+                        <div class="price">100$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>                          
+                        </div>                  
+                    </div>               
+                </article>
+                <article class="card" id="shoes" style="--isPopular:true">
+                    <div class="author"><div class="name">Clothes</div></div>
+                    <div class="image"><img src="./vecteezy_unisex-crewneck-sweatshirt-soft-stabilized-fabric-suitable_26756030.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Winter</div>
+                        <div class="price">150$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>              
+                        </div>
+                    </div>
+                </article>
+                <article class="card" id="shoes" style="--isNew:true">
+                    <div class="author"><div class="name">Shoes</div></div>
+                    <div class="image"><img src="./—Pngtree—sneakers running shoes color_9145069.png" alt=""></div>
+                    <div class="info">
+                        <div class="name">Sneakers</div>
+                        <div class="price">40$</div>
+                    </div>
+                    <div class="more">
+                        <div class="buttons">
+                            <a><i class='fas fa-shopping-cart'></i></a>
+                            <a><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Get the Best quality clothes here.</p>
+        <div class="social">
+            <span>Follow Us on Social Networks:</span>
+            <a><i id="i1" class="fab fa-instagram"></i></a>
+            <a><i id="i2" class="fab fa-telegram"></i></a>
+            <a><i id="i3" class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</div>
+    <script src="./web.js"></script>
+</body>
+</html>
